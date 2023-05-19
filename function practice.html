@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    Radious:<input type="text" name="no" id="no">
+    <input type="button" name="btn1" value="Find Area" onclick="sum(10,20)">
+    <p id="ans"></p>
+    <p id="ans1"></p>
+    <script>
+        function getArea(){
+            r = document.getElementById('no').value;
+            var pi=3.14;
+            var area = pi*r**2;
+            document.getElementById('ans').innerHTML = "Area of circle is "+area;
+        }
+        function sum(a,b){
+            var c= a+b;
+            document.getElementById('ans1').innerHTML = "Addition is "+c;
+        }
+    </script>
+</body>
+</html>

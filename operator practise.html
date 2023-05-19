@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator</title>
+</head>
+<body>
+    <p id="ans"></p>
+    <p id="ans1"></p>
+    <p id="ans2"></p>
+    <p id="ans3"></p>
+
+    <p id="ans4"></p>
+
+    <script>
+        var x=900,y=190,z=45;
+        var A=10;
+        var B = '11';
+        document.getElementById('ans').innerHTML = (x>y)?"A is maximum":"B is maximum";//ternary 
+        document.getElementById('ans1').innerHTML = (x!==y);
+
+        document.getElementById('ans2').innerHTML = (x>y && x>z);//true
+        document.getElementById('ans3').innerHTML = (x>y || x>z) + " Not pr = "+!(x>y || x>z);//true,false
+
+        document.getElementById('ans4').innerHTML = "type of A var is \'"+typeof(A) + "\' - B type is  \"" +typeof(B)+"\"";
+       
+    </script>
+</body>
+</html>

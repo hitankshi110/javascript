@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case</title>
+</head>
+<body>
+    <p id="ans"></p>
+    <script>
+        var a,b,c,ch;
+        a=10,b=20,ch='f'; //1-addtion 2- minus,3=*,4=/,
+        switch(ch){
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':document.getElementById('ans').innerHTML = "it is vowels";
+                    break;
+
+            case '+': c=a+b;
+                    document.getElementById('ans').innerHTML = "Addition is "+c;
+                    break;
+            case 2:c=a-b;
+                    document.getElementById('ans').innerHTML = "Minus is "+c;
+                    break;
+
+            case 3:c=a*b;
+                    document.getElementById('ans').innerHTML = "Multiplication is "+c;
+                    break;
+
+            case 4:c=a/b;
+                    document.getElementById('ans').innerHTML = "division is "+c;
+                    break;
+
+            default:document.getElementById('ans').innerHTML = "Consonant";
+                    break;
+        }
+
+    </script>
+</body>
+</html>
