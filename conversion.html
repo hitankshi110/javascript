@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion</title>
+</head>
+<body>
+    <script>
+
+        //meter to foot
+        function meterToFoot(meters) {
+        let feet = meters * 3.281;
+         return feet;
+        }
+
+        //celsius to farhenheit
+        function celsiusToFahrenheit(celsius){
+        let farhenheit = (celsius * 9/5)+32;
+        return farhenheit;
+        }
+
+        //dollar to rupees
+        function dollarToRupees(dollars) {
+        let exchangeRate = 82.75; // Assuming 1 dollar = 82.75 rupees
+        let rupees = dollars * exchangeRate;
+        return rupees;
+        }
+
+
+
+
+        let meters = 10;
+        let feet = meterToFoot(meters);
+        document.write(meters + " meters is equal to " + feet + " feet."+"<br>");
+
+        let celsius = 20;
+        let fahrenheit = celsiusToFahrenheit(celsius);
+        document.write(celsius + " degrees Celsius is equal to " + fahrenheit + " degrees Fahrenheit."+"<br>");
+
+        let dollars = 30;
+        let rupees = dollarToRupees(dollars);
+        document.write(dollars + " dollars is equal to " + rupees + " rupees."+"<br>");
+    </script>
+</body>
+</html>

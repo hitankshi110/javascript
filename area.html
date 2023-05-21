@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>area</title>
+</head>
+<body>
+    <script>
+        function RectangleArea(length, width) {
+        return length * width;
+  }
+  
+ 
+        function TriangleArea(base, height) {
+        return (base * height) / 2;
+  }
+  
+        function CircleArea(radius) {
+        return 3.14 * radius * radius;
+  }
+  
+        let rectangleArea = RectangleArea(40, 50);
+        document.write("Rectangle area:-"+ rectangleArea+"<br>");
+  
+        let triangleArea = TriangleArea(45, 60);
+        document.write("Triangle area:-"+ triangleArea+"<br>");
+  
+        let circleArea = CircleArea(40);
+        document.write("Circle area:-"+ circleArea);
+    </script>
+</body>
+</html>
