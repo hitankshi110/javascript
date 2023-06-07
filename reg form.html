@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRForm</title>
+    <style>
+        body{
+            background-color: burlywood;
+            color: brown;
+            font-weight: bold;
+        }
+        .error{
+            color: red;
+        }
+        input{
+            background-color:khaki;
+        }
+        h1{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1><center>Student Registration Form</center></h1>
+
+    <form action="#" name="registrationForm" onsubmit="return validateForm()">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="fname">
+      <span id="firstNameError" class="error"></span><br><br>
+  
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lname">
+      <span id="lastNameError" class="error"></span><br><br>
+  
+      <label for="dateOfBirth">Date of Birth:</label>
+      <input type="date" id="dateOfBirth" name="dob">
+      <span id="dateOfBirthError" class="error"></span><br><br>
+  
+      <label for="gender">Gender:</label>
+      <input type="radio" id="male" name="gender" value="Male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female">
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="Other">
+      <label for="other">Other</label>
+      <span id="genderError" class="error"></span><br><br>
+  
+      <label for="hobbies">Hobbies:</label>
+      <input type="checkbox" id="reading" name="hobbies" value="Reading" required>
+      <label for="reading">Reading</label>
+      <input type="checkbox" id="sports" name="hobbies" value="Sports" required>
+      <label for="sports">Sports</label>
+      <input type="checkbox" id="music" name="hobbies" value="Music" required>
+      <label for="music">Music</label>
+      <span id="hobbiesError" class="error"></span><br><br>
+  
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+      <span id="passwordError" class="error"></span><br><br>
+  
+      <input type="submit" value="Register" name="btn1">
+      </form>
+
+      <script>
+        function validateForm(){
+            var firstname = document.registrationForm.fname.value;
+            var lastname = document.registrationForm.lname.value;
+            var dob = document.registrationForm.dob.value;
+            var gender = document.registrationForm.gender.value;
+            var hobbies = document.registrationForm.hobbies.value;
+            var password = document.registrationForm.password.value;
+            if(firstname === ""){
+                document.getElementById('firstNameError').innerHTML = "First Name is required";
+                document.getElementById('firstNameError').style.color="red";
+                return false;
+            }
+            if(lastname === ""){
+                document.getElementById('lastNameError').innerHTML = "Last Name is required";
+                document.getElementById('firstNameError').style.color="red";
+
+                return false;
+            }
+            if(dob === ""){
+                document.getElementById('dateOfBirthError').innerHTML = "Date of Birth is required";
+                document.getElementById('firstNameError').style.color="red";
+
+                return false;
+            }
+            if(gender === ""){
+                document.getElementById('genderError').innerHTML = "Gender is required";
+                document.getElementById('firstNameError').style.color="red";
+
+                return false;   
+
+            }
+            if(hobbies == ""){
+                document.getElementById('hobbiesError').innerHTML = "Hobbies is required";
+                document.getElementById('firstNameError').style.color="red";
+                return false;
+            }else{
+                return true;
+            }
+            if(password === ""){
+            document.getElementById('passwordError').innerHTML = "Password is required";
+            document.getElementById('firstNameError').style.color="red";
+            return false;
+            }   else{
+                return true;
+            }
+         
+}
+
+      </script>
+</body>
+</html>

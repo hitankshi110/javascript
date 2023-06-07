@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color:beige;">
+
+    <div class="container">
+        
+        <h1><center>Calculator</center></h1>
+      
+   <div class="box">
+   <center><p>Calc</p></center>
+    <input type="text" name="no1" id="no1">
+    <br>
+    <hr color="pink"> 
+    <input type="button" name="one" id="btn" value="1" onclick="getVal(1)">
+    <input type="button" name="two" id="btn" value="2" onclick="getVal(2)">
+    <input type="button" name="three" id="btn" value="3" onclick="getVal(3)">
+    <input type="button" name="plus" id="btn" value="+" onclick="getVal('+')">
+    <input type="button" name="minus" id="btn" value="-" onclick="getVal('-')">
+    <br><br>
+    <input type="button" name="four" id="btn" value="4" onclick="getVal(4)">
+    <input type="button" name="five" id="btn" value="5" onclick="getVal(5)">
+    <input type="button" name="six" id="btn" value="6" onclick="getVal(6)">
+    <input type="button" name="multiply" id="btn" value="*" onclick="getVal('*')">
+    <input type="button" name="divide" id="btn" value="/" onclick="getVal('/')">
+    <br><br>
+    <input type="button" name="seven" id="btn" value="7" onclick="getVal(7)">
+    <input type="button" name="eight" id="btn" value="8" onclick="getVal(8)">
+    <input type="button" name="nine" id="btn" value="9" onclick="getVal(9)">
+    <input type="button" name="sqrt" id="sqrt" value="sqrt" onclick="sqrt()">
+    <input type="button" name="back" id="back" value="__" onclick="back('__')">
+    <br><br>
+    <input type="button" name="zero" id="btn" value="0" onclick="getVal(0)">
+    <input type="button" name="zerozero" id="btn" value="00" onclick="getVal(00)">
+    <input type="button" name="dot" id="btn" value="." onclick="getVal('.')">
+
+
+
+    <input type="button" name="clear" value="C" onclick="getclear()">
+
+    <input type="button" name="ans" id="ans" value="=" onclick="getAns()">
+    
+
+    
+   </div><br>
+  
+    <script src="calc.js"></script>
+
+</div>
+</body>
+</html>
